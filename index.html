@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yazid Rizky — Aspiring Software Developer</title>
+  <meta name="description" content="Portfolio of Yazid Rizky — Aspiring Software Developer building digital solutions through code, creativity, and continuous learning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/lenis.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- Ambient Parallax Background Glows -->
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-3" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-bracket">&lt;/&gt;</span>
+        <span class="brand-name">Yazid</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="nav-cta">LET’S TALK ↗</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <img src="assets/icon-menu.svg" alt="Menu" class="menu-icon">
+        </button>
+      </div>
+    </div>
+    <div class="navbar-divider"></div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <a href="#home" class="nav-brand">
+        <span class="brand-bracket">&lt;/&gt;</span>
+        <span class="brand-name">Yazid</span>
+      </a>
+      <button class="mobile-close" id="mobileClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="#contact" class="btn-primary mobile-cta">LET’S TALK ↗</a>
+      <div class="mobile-socials">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="assets/icon-github.svg" alt="GitHub"></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="assets/icon-linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="assets/icon-instagram.svg" alt="Instagram"></a>
+        <a href="mailto:mohammadyazidur@gmail.com" aria-label="Email"><img src="assets/icon-mail.svg" alt="Email"></a>
+      </div>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section section-3d-wrap" id="home">
+      <div class="hero-container section-3d-inner" id="heroInner">
+        <!-- Hero Content (Left) -->
+        <div class="hero-content" id="heroContent">
+          <div class="hero-tag">
+            <span class="crimson-dash"></span>
+            <span class="tag-text">HELLO, WORLD. I’M</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-greet">Hi, I’m</span>
+            <span class="title-name">Yazid Rizky.</span>
+            <span class="title-role">Aspiring Software<br>Developer</span>
+          </h1>
+
+          <p class="hero-desc">
+            Building digital solutions through code, creativity, and continuous learning
+          </p>
+
+          <div class="hero-cta-wrapper">
+            <a href="#projects" class="explore-btn" aria-label="Explore my work">
+              <span class="explore-circle">
+                <img src="assets/icon-down.svg" alt="" class="explore-icon">
+              </span>
+              <div class="explore-text">
+                <span class="explore-main">Explore my work</span>
+                <span class="explore-sub">SCROLL TO DISCOVER</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Portrait with 3D Tilt & Dynamic Glow (Center) -->
+        <div class="hero-portrait-wrapper" id="heroPortraitWrapper">
+          <div class="portrait-dynamic-glow" id="portraitGlow"></div>
+          <div class="portrait-container" id="heroPortrait">
+            <img src="assets/portrait.png" alt="Yazid Rizky Portrait" class="portrait-image">
+            <div class="portrait-overlay overlay-top"></div>
+            <div class="portrait-overlay overlay-right"></div>
+            <div class="portrait-overlay overlay-bottom"></div>
+            <div class="portrait-overlay overlay-left"></div>
+          </div>
+        </div>
+
+        <!-- Hero Sidebar (Right on desktop) -->
+        <aside class="hero-sidebar" id="heroSidebar">
+          <div class="sidebar-block">
+            <span class="sidebar-label">01 / ABOUT ME</span>
+            <h3 class="sidebar-heading">Curious mind.<br>Builder at heart.</h3>
+            <p class="sidebar-body">Turning ideas into<br>useful digital<br>experiences.</p>
+          </div>
+
+          <div class="sidebar-divider"></div>
+
+          <div class="sidebar-block">
+            <span class="sidebar-label">02 / MY WORK</span>
+            <h3 class="sidebar-heading">Small steps.<br>Real solutions.</h3>
+            <a href="#projects" class="sidebar-link">
+              <span>4 selected projects</span>
+              <img src="assets/icon-up.svg" alt="" class="sidebar-link-icon">
+            </a>
+          </div>
+
+          <div class="sidebar-socials">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+              <img src="assets/icon-github.svg" alt="GitHub">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+              <img src="assets/icon-linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <img src="assets/icon-instagram.svg" alt="Instagram">
+            </a>
+            <a href="mailto:mohammadyazidur@gmail.com" class="social-icon-btn" aria-label="Email">
+              <img src="assets/icon-mail.svg" alt="Email">
+            </a>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Hero Bottom Bar -->
+      <div class="hero-footer-bar">
+        <div class="hero-footer-divider"></div>
+        <div class="hero-footer-content">
+          <span class="footer-meta-item">BASED IN INDONESIA</span>
+          <div class="availability-status">
+            <span class="status-dot"></span>
+            <span class="footer-meta-item">AVAILABLE FOR INTERNSHIPS &amp; COLLABORATIONS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section section-3d-wrap" id="about">
+      <div class="section-container section-3d-inner animate-3d-section">
+        <div class="about-grid">
+          <!-- Left Column -->
+          <div class="about-left">
+            <span class="section-tag">01 / A LITTLE ABOUT ME</span>
+            <h2 class="section-heading">Always curious.<br>Always building.</h2>
+          </div>
+
+          <!-- Right Column -->
+          <div class="about-right">
+            <p class="about-lead">
+              I’m Yazid, an aspiring software developer who enjoys turning everyday problems into simple, useful digital experiences.
+            </p>
+            <p class="about-body">
+              From the first line of code to the final detail, I’m learning by doing — exploring web development, building projects, and getting a little better every day.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-row">
+          <div class="stat-card">
+            <span class="stat-number">04</span>
+            <span class="stat-label">Projects built</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-number">06</span>
+            <span class="stat-label">Core technologies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat-number stat-infinity">∞</span>
+            <span class="stat-label">Things to learn</span>
+          </div>
+        </div>
+
+        <!-- Skills / Toolkit Sub-section -->
+        <div class="toolkit-divider" id="skills"></div>
+        <div class="toolkit-wrapper">
+          <div class="toolkit-info">
+            <span class="toolkit-label">MY EVERYDAY TOOLKIT</span>
+            <h3 class="toolkit-title">The tools behind the ideas.</h3>
+          </div>
+
+          <div class="tech-badges-grid" id="techBadgesGrid">
+            <!-- PHP -->
+            <div class="tech-badge badge-php" data-depth="1">
+              <span class="badge-icon icon-php">php</span>
+              <span class="badge-name">PHP</span>
+            </div>
+
+            <!-- HTML5 -->
+            <div class="tech-badge badge-html" data-depth="2">
+              <span class="badge-icon icon-html">5</span>
+              <span class="badge-name">HTML5</span>
+            </div>
+
+            <!-- CSS3 -->
+            <div class="tech-badge badge-css" data-depth="3">
+              <span class="badge-icon icon-css">3</span>
+              <span class="badge-name">CSS3</span>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="tech-badge badge-js" data-depth="1.5">
+              <span class="badge-icon icon-js">JS</span>
+              <span class="badge-name">JavaScript</span>
+            </div>
+
+            <!-- Laravel -->
+            <div class="tech-badge badge-laravel" data-depth="2.5">
+              <span class="badge-icon icon-laravel">L</span>
+              <span class="badge-name">Laravel</span>
+            </div>
+
+            <!-- Git -->
+            <div class="tech-badge badge-git" data-depth="1.8">
+              <span class="badge-icon icon-git">git</span>
+              <span class="badge-name">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="projects-section section-3d-wrap" id="projects">
+      <div class="section-container section-3d-inner animate-3d-section">
+        <div class="projects-header">
+          <div>
+            <span class="section-tag">02 / SELECTED WORK</span>
+            <h2 class="section-heading">Ideas into action.</h2>
+          </div>
+          <p class="projects-subtitle">A few things I’ve built along the way.</p>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1: Peminjaman Buku -->
+          <article class="project-card" data-project="buku">
+            <div class="project-card-sheen"></div>
+            <div class="project-preview preview-buku">
+              <!-- Mock App Interface -->
+              <div class="mock-window">
+                <!-- App Sidebar -->
+                <div class="mock-sidebar">
+                  <div class="mock-brand">Buku.</div>
+                  <div class="mock-menu-item active">Overview</div>
+                  <div class="mock-menu-item">Book catalog</div>
+                  <div class="mock-menu-item">Borrowers</div>
+                  <div class="mock-menu-item">Settings</div>
+                </div>
+
+                <!-- App Main Area -->
+                <div class="mock-content">
+                  <div class="mock-breadcrumb">WORKSPACE / OVERVIEW</div>
+                  <div class="mock-title">Library overview</div>
+                  <div class="mock-subtitle">Welcome back, Yazid. Here’s what’s happening today.</div>
+
+                  <!-- Mock Stat Cards -->
+                  <div class="mock-stats">
+                    <div class="mock-stat-box">
+                      <span class="mock-stat-label">Total books</span>
+                      <span class="mock-stat-val val-buku">1,248</span>
+                    </div>
+                    <div class="mock-stat-box">
+                      <span class="mock-stat-label">On loan</span>
+                      <span class="mock-stat-val">86</span>
+                    </div>
+                    <div class="mock-stat-box">
+                      <span class="mock-stat-label">Members</span>
+                      <span class="mock-stat-val">320</span>
+                    </div>
+                  </div>
+
+                  <!-- Mock Table -->
+                  <div class="mock-table-section">
+                    <div class="mock-table-head-row">
+                      <span class="mock-table-title">Recent borrowings</span>
+                      <span class="mock-table-action val-buku">View all →</span>
+                    </div>
+                    <div class="mock-table-cols">
+                      <span>BOOK TITLE</span>
+                      <span>BORROWER</span>
+                      <span>STATUS</span>
+                    </div>
+                    <div class="mock-table-line"></div>
+                    <div class="mock-table-row">
+                      <span class="cell-main">The Design of Everyday Things</span>
+                      <span class="cell-sub">Aditya Putra</span>
+                      <span class="cell-status status-loan">On loan</span>
+                    </div>
+                    <div class="mock-table-line"></div>
+                    <div class="mock-table-row">
+                      <span class="cell-main">Clean Code</span>
+                      <span class="cell-sub">Nadia Putri</span>
+                      <span class="cell-status status-returned">Returned</span>
+                    </div>
+                    <div class="mock-table-line"></div>
+                    <div class="mock-table-row">
+                      <span class="cell-main">Atomic Habits</span>
+                      <span class="cell-sub">Rizki Ahmad</span>
+                      <span class="cell-status status-loan">On loan</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Bottom Content -->
+            <div class="project-info">
+              <span class="project-category">01 / LIBRARY MANAGEMENT</span>
+              <div class="project-title-row">
+                <h3 class="project-name">Peminjaman Buku</h3>
+                <div class="project-arrow-btn">
+                  <img src="assets/arrow-up-right.svg" alt="View project" class="arrow-icon">
+                </div>
+              </div>
+              <p class="project-desc">A simpler way to manage books, borrowers, and every return.</p>
+              <div class="project-tech">PHP &nbsp;/&nbsp; MySQL &nbsp;/&nbsp; Bootstrap</div>
+            </div>
+          </article>
+
+          <!-- Project 2: Sewa Mobil -->
+          <article class="project-card" data-project="mobil">
+            <div class="project-card-sheen"></div>
+            <div class="project-preview preview-mobil">
+              <!-- Mock App Interface -->
+              <div class="mock-window">
+                <!-- App Sidebar -->
+                <div class="mock-sidebar">
+                  <div class="mock-brand brand-mobil">Drive.</div>
+                  <div class="mock-menu-item active active-mobil">Overview</div>
+                  <div class="mock-menu-item">Vehicles</div>
+                  <div class="mock-menu-item">Bookings</div>
+                  <div class="mock-menu-item">Settings</div>
+                </div>
+
+                <!-- App Main Area -->
+                <div class="mock-content">
+                  <div class="mock-breadcrumb">WORKSPACE / OVERVIEW</div>
+                  <div class="mock-title">Rental overview</div>
+                  <div class="mock-subtitle">Welcome back, Yazid. Here’s what’s happening today.</div>
+
+                  <!-- Mock Stat Cards -->
+                  <div class="mock-stats">
+                    <div class="mock-stat-box">
+                      <span class="mock-stat-label">Available cars</span>
+                      <span class="mock-stat-val val-mobil">24</span>
+                    </div>
+                    <div class="mock-stat-box">
+                      <span class="mock-stat-label">Active rentals</span>
+                      <span class="mock-stat-val">12</span>
+                    </div>
+                    <div class="mock-stat-box">
+                      <span class="mock-stat-label">Bookings</span>
+                      <span class="mock-stat-val">48</span>
+                    </div>
+                  </div>
+
+                  <!-- Mock Table -->
+                  <div class="mock-table-section">
+                    <div class="mock-table-head-row">
+                      <span class="mock-table-title">Recent bookings</span>
+                      <span class="mock-table-action val-mobil">View all →</span>
+                    </div>
+                    <div class="mock-table-cols">
+                      <span>VEHICLE</span>
+                      <span>CUSTOMER</span>
+                      <span>STATUS</span>
+                    </div>
+                    <div class="mock-table-line"></div>
+                    <div class="mock-table-row">
+                      <span class="cell-main">Toyota Avanza</span>
+                      <span class="cell-sub">Farhan Ali</span>
+                      <span class="cell-status val-mobil">Active</span>
+                    </div>
+                    <div class="mock-table-line"></div>
+                    <div class="mock-table-row">
+                      <span class="cell-main">Honda Brio</span>
+                      <span class="cell-sub">Sarah Aulia</span>
+                      <span class="cell-status val-mobil">Confirmed</span>
+                    </div>
+                    <div class="mock-table-line"></div>
+                    <div class="mock-table-row">
+                      <span class="cell-main">Suzuki XL7</span>
+                      <span class="cell-sub">Dimas Pratama</span>
+                      <span class="cell-status val-mobil">Completed</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Bottom Content -->
+            <div class="project-info">
+              <span class="project-category">02 / CAR RENTAL PLATFORM</span>
+              <div class="project-title-row">
+                <h3 class="project-name">Sewa Mobil</h3>
+                <div class="project-arrow-btn">
+                  <img src="assets/arrow-up-right.svg" alt="View project" class="arrow-icon">
+                </div>
+              </div>
+              <p class="project-desc">From finding the right ride to managing bookings, all in one place.</p>
+              <div class="project-tech">Laravel &nbsp;/&nbsp; MySQL &nbsp;/&nbsp; JavaScript</div>
+            </div>
+          </article>
+
+          <!-- Project 3: KasKita -->
+          <article class="project-card" data-project="kaskita">
+            <div class="project-card-sheen"></div>
+            <div class="project-preview preview-kaskita">
+              <!-- Mock App Interface -->
+              <div class="mock-window">
+                <!-- App Sidebar -->
+                <div class="mock-sidebar">
+                  <div class="mock-brand brand-kaskita">kaskita</div>
+                  <div class="mock-menu-item active active-kaskita">Overview</div>
+                  <div class="mock-menu-item">Transactions</div>
+                  <div class="mock-menu-item">Reports</div>
+                  <div class="mock-menu-item">Settings</div>
+                </div>
+
+                <!-- App Main Area -->
+                <div class="mock-content">
+                  <div class="mock-breadcrumb">WORKSPACE / OVERVIEW</div>
+                  <div class="mock-title">Your money, at a glance.</div>
+                  <div class="mock-subtitle">Welcome back, Yazid. Here’s what’s happening today.</div>
+
+                  <!-- Mock Stat Cards -->
+                  <div class="mock-stats">
+                    <div class="mock-stat-box">
+                      <span class="mock-stat-label">Balance</span>
+                      <span class="mock-stat-val val-kaskita font-sm">Rp 8.450.000</span>
+                    </div>
+                    <div class="mock-stat-box">
+                      <span class="mock-stat-label">Income</span>
+                      <span class="mock-stat-val font-sm">Rp 12.500.000</span>
+                    </div>
+                    <div class="mock-stat-box">
+                      <span class="mock-stat-label">Expenses</span>
+                      <span class="mock-stat-val font-sm">Rp 4.050.000</span>
+                    </div>
+                  </div>
+
+                  <!-- Mock Table -->
+                  <div class="mock-table-section">
+                    <div class="mock-table-head-row">
+                      <span class="mock-table-title">Recent transactions</span>
+                      <span class="mock-table-action val-kaskita">View all →</span>
+                    </div>
+                    <div class="mock-table-cols">
+                      <span>TRANSACTION</span>
+                      <span>CATEGORY</span>
+                      <span>AMOUNT</span>
+                    </div>
+                    <div class="mock-table-line"></div>
+                    <div class="mock-table-row">
+                      <span class="cell-main">Website project</span>
+                      <span class="cell-sub">Income</span>
+                      <span class="cell-status val-kaskita">+ Rp 2.500.000</span>
+                    </div>
+                    <div class="mock-table-line"></div>
+                    <div class="mock-table-row">
+                      <span class="cell-main">Internet subscription</span>
+                      <span class="cell-sub">Utilities</span>
+                      <span class="cell-status val-kaskita">− Rp 350.000</span>
+                    </div>
+                    <div class="mock-table-line"></div>
+                    <div class="mock-table-row">
+                      <span class="cell-main">Design resources</span>
+                      <span class="cell-sub">Education</span>
+                      <span class="cell-status val-kaskita">− Rp 150.000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Bottom Content -->
+            <div class="project-info">
+              <span class="project-category">03 / FINANCE TRACKER</span>
+              <div class="project-title-row">
+                <h3 class="project-name">KasKita</h3>
+                <div class="project-arrow-btn">
+                  <img src="assets/arrow-up-right.svg" alt="View project" class="arrow-icon">
+                </div>
+              </div>
+              <p class="project-desc">Keep cash flow clear. Track income, expenses, and what matters.</p>
+              <div class="project-tech">Laravel &nbsp;/&nbsp; MySQL &nbsp;/&nbsp; Chart.js</div>
+            </div>
+          </article>
+
+          <!-- Project 4: My Inventory -->
+          <article class="project-card" data-project="inventory">
+            <div class="project-card-sheen"></div>
+            <div class="project-preview preview-inventory">
+              <!-- Mock App Interface -->
+              <div class="mock-window">
+                <!-- App Sidebar -->
+                <div class="mock-sidebar">
+                  <div class="mock-brand brand-inventory">inventory.</div>
+                  <div class="mock-menu-item active active-inventory">Overview</div>
+                  <div class="mock-menu-item">Products</div>
+                  <div class="mock-menu-item">Stock activity</div>
+                  <div class="mock-menu-item">Settings</div>
+                </div>
+
+                <!-- App Main Area -->
+                <div class="mock-content">
+                  <div class="mock-breadcrumb">WORKSPACE / OVERVIEW</div>
+                  <div class="mock-title">Inventory dashboard</div>
+                  <div class="mock-subtitle">Welcome back, Yazid. Here’s what’s happening today.</div>
+
+                  <!-- Mock Stat Cards -->
+                  <div class="mock-stats">
+                    <div class="mock-stat-box">
+                      <span class="mock-stat-label">Total products</span>
+                      <span class="mock-stat-val val-inventory">248</span>
+                    </div>
+                    <div class="mock-stat-box">
+                      <span class="mock-stat-label">Low stock</span>
+                      <span class="mock-stat-val">12</span>
+                    </div>
+                    <div class="mock-stat-box">
+                      <span class="mock-stat-label">Categories</span>
+                      <span class="mock-stat-val">18</span>
+                    </div>
+                  </div>
+
+                  <!-- Mock Table -->
+                  <div class="mock-table-section">
+                    <div class="mock-table-head-row">
+                      <span class="mock-table-title">Product overview</span>
+                      <span class="mock-table-action val-inventory">View all →</span>
+                    </div>
+                    <div class="mock-table-cols">
+                      <span>PRODUCT NAME</span>
+                      <span>STOCK</span>
+                      <span>STATUS</span>
+                    </div>
+                    <div class="mock-table-line"></div>
+                    <div class="mock-table-row">
+                      <span class="cell-main">Mechanical Keyboard</span>
+                      <span class="cell-sub">42 units</span>
+                      <span class="cell-status val-inventory">In stock</span>
+                    </div>
+                    <div class="mock-table-line"></div>
+                    <div class="mock-table-row">
+                      <span class="cell-main">Wireless Mouse</span>
+                      <span class="cell-sub">8 units</span>
+                      <span class="cell-status val-inventory">Low stock</span>
+                    </div>
+                    <div class="mock-table-line"></div>
+                    <div class="mock-table-row">
+                      <span class="cell-main">USB-C Hub</span>
+                      <span class="cell-sub">64 units</span>
+                      <span class="cell-status val-inventory">In stock</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Bottom Content -->
+            <div class="project-info">
+              <span class="project-category">04 / INVENTORY MANAGEMENT</span>
+              <div class="project-title-row">
+                <h3 class="project-name">My Inventory</h3>
+                <div class="project-arrow-btn">
+                  <img src="assets/arrow-up-right.svg" alt="View project" class="arrow-icon">
+                </div>
+              </div>
+              <p class="project-desc">Stay on top of stock, organize products, and keep things moving.</p>
+              <div class="project-tech">PHP &nbsp;/&nbsp; MySQL &nbsp;/&nbsp; JavaScript</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section section-3d-wrap" id="contact">
+      <div class="section-container section-3d-inner animate-3d-section">
+        <div class="contact-grid">
+          <!-- Left Column -->
+          <div class="contact-info">
+            <span class="section-tag">03 / HAVE SOMETHING IN MIND?</span>
+            <h2 class="contact-heading">Let’s build<br>something great.</h2>
+
+            <p class="contact-desc">
+              An idea, an opportunity, or just a hello?<br>
+              I’d love to hear from you.
+            </p>
+
+            <div class="find-me-section">
+              <span class="find-me-label">FIND ME ELSEWHERE</span>
+              <div class="find-me-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="external-link">GitHub ↗</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="external-link">LinkedIn ↗</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="external-link">Instagram ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column (Form) -->
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Your name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="How should I call you?" required>
+                <span class="form-error" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+                <span class="form-error" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Your message</label>
+                <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell me a little about your idea…" required></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="submit-btn" id="submitBtn">
+                <span>Send message</span>
+                <span class="submit-arrow">↗</span>
+              </button>
+            </form>
+
+            <div class="form-feedback" id="formFeedback">
+              <span class="feedback-icon">✓</span>
+              <span>Thank you! Your message has been sent successfully.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+          <div class="footer-divider"></div>
+          <div class="footer-row">
+            <div class="footer-brand">
+              <span class="brand-bracket">&lt;/&gt;</span>
+              <span class="brand-name">Yazid</span>
+            </div>
+            <div class="footer-motto">Made with curiosity. Built with purpose.</div>
+            <div class="footer-copy">© 2026 Yazid Rizky</div>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- GSAP & Lenis Plugins (Local + CDN fallback) -->
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script>
+    if (typeof Lenis === 'undefined') {
+      document.write('<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"><\/script>');
+    }
+  </script>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script>
+    if (typeof gsap === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"><\/script>');
+    }
+  </script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script>
+    if (typeof ScrollTrigger === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"><\/script>');
+    }
+  </script>
+
+  <!-- Main Application Script -->
+  <script src="script.js"></script>
+</body>
+</html>
